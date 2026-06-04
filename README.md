@@ -193,7 +193,7 @@ Always conduct your own research before making investment decisions.
 🔗 Links
 
 Telegram Bot:
-https://t.me/SafeGuardBot
+https://t.me/SafeGuardFiBot
 
 GitHub Repository:
 https://github.com/TeleBlockDev/SafeGuard-Bot
