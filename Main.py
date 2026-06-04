@@ -1,7 +1,6 @@
 """
-SafeGuard Bot - Wave 2 Polished Version
-Agentic Telegram Tool with SoSoValue Integration + Mock Trade + Strategy Engine
-Built for AKINDO SoSoValue Buildathon
+SafeGuard Bot
+Intelligent Telegram Agent for On-Chain Finance Analysis
 """
 
 import os
@@ -96,6 +95,12 @@ async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # ========================= UI =========================
 
+async def set_commands(application: Application):
+    await application.bot.set_my_commands([
+        BotCommand("start", "Launch SafeGuard Bot"),
+    ])
+
+
 async def show_main_menu(update: Update, context: ContextTypes.DEFAULT_TYPE, edit: bool = False):
     keyboard = [
         [InlineKeyboardButton("📊 BTC", callback_data="BTC"), InlineKeyboardButton("📊 ETH", callback_data="ETH")],
@@ -104,7 +109,7 @@ async def show_main_menu(update: Update, context: ContextTypes.DEFAULT_TYPE, edi
         [InlineKeyboardButton("🛡️ Risk Settings", callback_data="guard")]
     ]
 
-    text = "🛡️ **SafeGuard Bot - Wave 2**\n\nTap any button for advanced analysis:"
+    text = "🛡️ **SafeGuard Bot**\n\nTap any button for advanced analysis:"
 
     if edit and update.callback_query:
         await update.callback_query.edit_message_text(
@@ -146,7 +151,6 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if data.startswith("trade_"):
         symbol = data.replace("trade_", "")
-        context.user_data["last_trade"] = symbol
         keyboard = [[InlineKeyboardButton("← Back to Menu", callback_data="menu")]]
         await query.edit_message_text(
             f"✅ **Mock Trade Executed**\n\n"
@@ -170,9 +174,13 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         get_fng()
     )
 
-    source = "✅ SoSoValue" if soso_data else "⚠️ CoinGecko Fallback"
-    if soso_data:
-        price_text = "📊 SoSoValue data received"
+    # Prioritize SoSoValue price if available
+    if soso_data and isinstance(soso_data, dict):
+        source = "✅ SoSoValue"
+        price = soso_data.get("price") or soso_data.get("last_price") or "N/A"
+        price_text = f"📊 Price: ${price}"
+    else:
+        source = "⚠️ CoinGecko Fallback"
 
     result = f"🛡️ **SafeGuard Report — {symbol}**\n\n"
     result += f"{source}\n{price_text}\n{fng_text}\n\n"
@@ -213,7 +221,9 @@ def main():
     app.add_handler(CallbackQueryHandler(button_callback))
     app.add_error_handler(error_handler)
 
-    logger.info("🚀 SafeGuard Bot - Wave 2 Final Version Deployed!")
+    app.post_init = set_commands
+
+    logger.info("🚀 SafeGuard Bot Deployed!")
     app.run_polling()
 
 
