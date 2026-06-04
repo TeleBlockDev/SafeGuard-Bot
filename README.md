@@ -6,7 +6,6 @@ SafeGuard Bot is an AI-powered Telegram assistant that helps users monitor crypt
 
 Built for the SoSoValue Buildathon, SafeGuard Bot combines institutional sentiment, market data, and risk management principles into a simple Telegram experience.
 
----
 
 🎯 Project Vision
 
@@ -19,7 +18,6 @@ SafeGuard Bot helps users make more informed decisions by providing:
 - Risk-managed trade suggestions
 - Structured analysis instead of market noise
 
----
 
 💡 Why SafeGuard Bot?
 
@@ -34,7 +32,6 @@ SafeGuard Bot transforms data into actionable intelligence through:
 - Strategy suggestions
 - Mock trade simulation
 
----
 
 🏗️ Architecture
 
@@ -57,7 +54,6 @@ Delivery Layer
 - Interactive buttons
 - Mobile-first experience
 
----
 
 🛠️ Tech Stack
 
@@ -70,7 +66,6 @@ Delivery Layer
 - Alternative.me API
 - JustRunMy.app Hosting
 
----
 
 🚀 Features
 
@@ -105,7 +100,6 @@ Reliability
 - Async data fetching
 - Error handling and recovery
 
----
 
 📊 Example Report
 
@@ -129,7 +123,6 @@ Risk Insight:
 
 Markets remain volatile. Use proper position sizing and confirmations.
 
----
 
 📦 Installation
 
@@ -146,7 +139,6 @@ Run the bot:
 
 python main.py
 
----
 
 🔐 Environment Variables
 
@@ -155,7 +147,6 @@ Create a ".env" file:
 BOT_TOKEN=your_telegram_bot_token
 SOSO_API_KEY=your_sosovalue_api_key
 
----
 
 🌊 Roadmap
 
@@ -189,7 +180,6 @@ Wave 4 🚧
 - Yield opportunities
 - Advanced analytics dashboard
 
----
 
 ⚠️ Disclaimer
 
@@ -199,7 +189,6 @@ Nothing provided by SafeGuard Bot should be considered financial advice.
 
 Always conduct your own research before making investment decisions.
 
----
 
 🔗 Links
 
@@ -209,6 +198,5 @@ https://t.me/SafeGuardBot
 GitHub Repository:
 https://github.com/TeleBlockDev/SafeGuard-Bot
 
----
 
 Built by TeleBlockDev for the SoSoValue Buildathon.
