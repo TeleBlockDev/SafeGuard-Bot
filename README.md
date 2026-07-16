@@ -2,6 +2,7 @@ SafeGuard Bot
 Intelligent Telegram Agent for Risk-Managed Crypto Insights
 SafeGuard Bot is an AI-powered Telegram assistant that helps users monitor cryptocurrency markets through sentiment analysis, market intelligence, and risk-aware trading insights.
 Built for the SoSoValue Buildathon, SafeGuard Bot combines institutional sentiment, market data, and risk management principles into a simple Telegram experience.
+
 🎯 Project Vision
 Crypto markets move fast and are often driven by emotion.
 SafeGuard Bot helps users make more informed decisions by providing:
@@ -9,6 +10,7 @@ Real-time market intelligence
 Sentiment-based insights
 Risk-managed trade suggestions
 Structured analysis instead of market noise
+
 💡 Why SafeGuard Bot?
 Most trading tools only display raw market data.
 SafeGuard Bot transforms data into actionable intelligence through:
@@ -18,6 +20,7 @@ Multi-source market pricing
 Risk management guidance
 Strategy suggestions
 Mock trade simulation
+
 🏗️ Architecture
 Intelligence Layer
 SoSoValue API (Primary)
@@ -33,6 +36,7 @@ Delivery Layer
 Telegram Bot Interface
 Interactive buttons
 Mobile-first experience
+
 🛠️ Tech Stack
 Python
 python-telegram-bot
@@ -43,6 +47,7 @@ CoinGecko API
 Alternative.me API
 DefiLlama API
 JustRunMy.app Hosting
+
 🚀 Features
 Market Analysis
 BTC, ETH, SOL, BNB, XRP, DOGE analysis
@@ -68,6 +73,7 @@ Reliability
 API fallback system
 Async data fetching
 Error handling and recovery
+
 📊 Example Report
 SafeGuard Report — BTC
 Price: $72,160
@@ -79,42 +85,50 @@ Strategy Suggestion:
 Consider scaling into positions gradually.
 Risk Insight:
 Markets remain volatile. Use proper position sizing and confirmations.
+
 📦 Installation
 git clone https://github.com/TeleBlockDev/SafeGuard-Bot.git
 cd SafeGuard-Bot
 pip install -r requirements.txt
 python main.py
+
 🔐 Environment Variables
 Create a .env file:
 BOT_TOKEN=your_telegram_bot_token
 SOSO_API_KEY=your_sosovalue_api_key
+
 🌊 Roadmap
 Wave 1 ✅
 Telegram bot foundation
 Multi-source pricing
 BTC, ETH, SOL, BNB support
 Fear & Greed integration
+
 Wave 2 ✅
 Risk management system
 Mock trade execution
 Strategy engine
 Interactive navigation
 Improved reporting
+
 Wave 3 ✅
 Advanced sentiment scoring
 Portfolio tracking
 Whale activity monitoring
 Automated alerts
 Enhanced market intelligence
+
 Wave 4 🚧
 SoDEX integration
 On-chain execution workflows
 Yield opportunities
 Advanced analytics dashboard
+
 ⚠️ Disclaimer
 This project is for educational and demonstration purposes only.
 Nothing provided by SafeGuard Bot should be considered financial advice.
 Always conduct your own research before making investment decisions.
+
 🔗 Links
 Telegram Bot: https://t.me/SafeGuardFiBot
 GitHub Repository: https://github.com/TeleBlockDev/SafeGuard-Bot
