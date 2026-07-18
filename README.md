@@ -269,7 +269,8 @@ GitHub Repository
 https://github.com/TeleBlockDev/SafeGuard-Bot⁠�
 
 YouTube Demo
-Add your demo video link here.
+
+https://www.youtube.com/watch?v=D7XO71I2nYc
 
 👨‍💻 Built by TeleBlockDev
 Built for the SoSoValue Buildathon.
