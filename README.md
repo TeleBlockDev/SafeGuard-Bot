@@ -263,10 +263,10 @@ Nothing provided by SafeGuard Bot should be considered financial advice. Always 
 
 🔗 Links
 Telegram Bot
-https://t.me/SafeGuardFiBot⁠�
+https://t.me/SafeGuardFiBot
 
 GitHub Repository
-https://github.com/TeleBlockDev/SafeGuard-Bot⁠�
+https://github.com/TeleBlockDev/SafeGuard-Bot
 
 YouTube Demo
 
